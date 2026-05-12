@@ -25,164 +25,266 @@
 </header>
 
 <!-- ====== STICKY NAV ====== -->
-<nav class="sticky-nav" aria-label="セクションナビ">
-  <a href="#summary">📋 今日</a>
-  <a href="#timeline">🕘 時刻表</a>
-  <a href="#safari">🦒 サファリ</a>
-  <a href="#lunch">🍴 昼食</a>
-  <a href="#konnyaku">🌿 こんにゃく</a>
-  <a href="#afternoon">☀ 午後</a>
+<nav class="sticky-nav" aria-label="時刻ナビ">
+  <a href="#t0830">08:30 出発</a>
+  <a href="#t1000">10:00 到着</a>
+  <a href="#t1030">10:30 ふれあい</a>
+  <a href="#t1230">12:30 エサバス</a>
+  <a href="#t1420">14:20 昼食</a>
+  <a href="#t1530">15:30 午後</a>
+  <a href="#t1700">17:00 帰路</a>
   <a href="#pack">🎒 持ち物</a>
-  <a href="#rain">☔ 雨天</a>
   <a href="#emergency">📞 緊急</a>
 </nav>
 
 <main class="container">
 
   <!-- ====== TODAY SUMMARY ====== -->
-  <section id="summary">
+  <section style="padding-top:20px;">
     <h2><span class="emoji">📋</span>今日のサマリー</h2>
 
     <div class="card">
-      <h3 style="margin-top:0;">行程ハイライト</h3>
-      <p>サファリパークで「マイカーで動物観察」→「ふれあいエリアでエサやり体験」→ お昼を園内サバンナで → 午後はこんにゃくパークで無料バイキング＆工場見学 → 余裕があれば「もみじ平総合公園」で遊んで帰る。</p>
-      <p style="margin-bottom:0;"><span class="tag">3歳児OK</span><span class="tag">マイカー</span><span class="tag warn">水曜定休明け平日</span><span class="tag">所要：8〜9時間</span></p>
+      <h3 style="margin-top:0;">ハイライト</h3>
+      <p style="margin-bottom:8px;">「ふれあいパークで動物に直接エサやり」→「エサバスplusでライオンの大迫力体験」→「サバンナでお昼」→「こんにゃくパーク or もみじ平で午後」。3歳児が一番楽しめる「動物にエサをやる」体験を主軸にした、無理のないプラン。</p>
+      <p style="margin-bottom:0;">
+        <span class="tag">3歳児OK</span>
+        <span class="tag">マイカー</span>
+        <span class="tag warn">水曜定休明け平日</span>
+        <span class="tag">所要：10時間</span>
+        <span class="tag">合計 15,500円〜</span>
+      </p>
     </div>
 
     <div class="card">
-      <h3 style="margin-top:0;">出発と帰宅の目安</h3>
+      <h3 style="margin-top:0;">料金合計（家族3人）</h3>
       <dl>
-        <div><dt>出発</dt><dd>7:00 自宅発（関越自動車道経由）</dd></div>
-        <div><dt>サファリ着</dt><dd>9:15〜9:30（開園9:30、入園受付〜16:00）</dd></div>
-        <div><dt>帰路出発</dt><dd>15:30〜16:00 富岡発</dd></div>
-        <div><dt>自宅着</dt><dd>18:00〜19:00 目安（渋滞なし想定）</dd></div>
+        <div><dt>マイカー入園</dt><dd>大人3,200×2＋3歳1,600 ＝ 8,000円</dd></div>
+        <div><dt>エサバスplus追加</dt><dd>大人＋2,500×2＋子＋2,500 ＝ ＋7,500円</dd></div>
+        <div><dt>合計（エサバスplus＋マイカー）</dt><dd><strong>15,500円</strong></dd></div>
+        <div><dt>昼食（サバンナ）</dt><dd>家族で 3,500〜5,000円目安</dd></div>
+        <div><dt>こんにゃくパーク</dt><dd>無料（駐車場・入館・バイキング・工場見学すべて）</dd></div>
       </dl>
-      <p style="font-size:0.88rem;color:var(--color-muted);margin:8px 0 0;">※ GW明け平日、水曜（5/13）休園日明けの木曜。公式FAQ上の混雑ピーク（GW・夏休み・土日）から外れるため、駐車場満車・食事大行列のリスクは低い見込み。</p>
-    </div>
-  </section>
-
-  <!-- ====== TIMELINE ====== -->
-  <section id="timeline">
-    <h2><span class="emoji">🕘</span>1日の時刻表</h2>
-
-    <div class="card">
-      <h3><span class="time">07:00</span><span class="place-name">自宅出発</span></h3>
-      <p class="summary">関越道→上信越道→富岡IC。所要約2時間〜2時間15分（平日朝なので渋滞は軽め）。途中で子供のトイレ休憩を1回想定。</p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">09:15</span><span class="place-name">群馬サファリパーク 到着</span></h3>
-      <p class="summary">第1駐車場（無料、約1,000台）に駐車。チケット売場でマイカー入園券＋エサバスplus 9:50便を購入（要事前ネット予約推奨）。トイレ・おむつ替えは総合案内所で済ませる。</p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">09:30</span><span class="place-name">マイカーサファリ突入</span></h3>
-      <p class="summary">自家用車で園内サファリゾーンを周回。窓・ドア・サンルーフは絶対に開けない。所要1.5〜2時間。3歳児は車内で動物を見学（チャイルドシート着用必須）。</p>
-      <p style="margin:6px 0 0;"><span class="tag">★最大の見せ場</span></p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">11:00</span><span class="place-name">ふれあいパーク・ウォーキングサファリ</span></h3>
-      <p class="summary">ウサギにニンジン（100円）、ヤギに青草（200円）。3歳児が一番楽しめるエリア。10:00〜16:00運営。トイレも近い。</p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">11:30</span><span class="place-name">レストラン サバンナで昼食</span></h3>
-      <p class="summary">11:00開店、15:00 LO。12時台ピーク前に入って混雑回避。<a href="#lunch">→ メニュー詳細</a></p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">12:45</span><span class="place-name">こんにゃくパークへ移動</span></h3>
-      <p class="summary">サファリから車で約10〜15分。無料駐車場あり。</p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">13:00</span><span class="place-name">こんにゃくパーク 見学＆無料バイキング</span></h3>
-      <p class="summary">工場見学（自由見学・20〜30分）＋無料バイキング（こんにゃく料理約15種類）＋お土産＋足湯。所要1〜1.5時間。<a href="#konnyaku">→ 詳細</a></p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">14:30</span><span class="place-name">もみじ平総合公園 / 自然史博物館（雨天）</span></h3>
-      <p class="summary">3歳児向け遊具・水遊び。隣接の群馬県立自然史博物館は雨天時の鉄板。<a href="#afternoon">→ 詳細</a></p>
-    </div>
-
-    <div class="card">
-      <h3><span class="time">15:30〜16:00</span><span class="place-name">帰路</span></h3>
-      <p class="summary">富岡IC→関越道→自宅。途中SAでトイレ休憩。</p>
-    </div>
-  </section>
-
-  <!-- ====== SAFARI PARK ====== -->
-  <section id="safari">
-    <h2><span class="emoji">🦒</span>群馬サファリパーク</h2>
-
-    <div class="card">
-      <h3 style="margin-top:0;">基本情報</h3>
-      <dl>
-        <div><dt>住所</dt><dd>群馬県富岡市岡本1番地</dd></div>
-        <div><dt>電話</dt><dd><a href="tel:0274-64-2111">0274-64-2111</a></dd></div>
-        <div><dt>営業</dt><dd>9:30〜17:00（入園受付〜16:00）／水曜定休（5/14は営業日）</dd></div>
-        <div><dt>料金</dt><dd>大人3,200円・3歳〜小学生1,600円<br>家族3人で <strong>8,000円</strong>（マイカー入園のみ）</dd></div>
-        <div><dt>駐車場</dt><dd>無料・約1,000台</dd></div>
-        <div><dt>ベビーカー</dt><dd>貸出100円／バスには載せられない</dd></div>
-      </dl>
-      <div class="actions">
-        <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=群馬サファリパーク" target="_blank" rel="noopener">🗺 Google Map</a>
-        <a class="btn tel" href="tel:0274-64-2111">📞 0274-64-2111</a>
-        <a class="btn web" href="https://safari.co.jp/" target="_blank" rel="noopener">🌐 公式サイト</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-top:0;">マイカーサファリの注意点</h3>
-      <ul style="margin:0 0 0 18px;padding:0;">
-        <li>窓・ドア・サンルーフは絶対に開けない</li>
-        <li>車外に出ない・車中での餌やりは不可</li>
-        <li>オープンカー・トラック・キャンバストップは入園不可</li>
-        <li>標準所要1時間30分（3歳児連れ・休憩込みで2〜2.5時間）</li>
-        <li>サファリエリア内はトイレが少ない → 出発前に必ず済ませる</li>
-      </ul>
+      <p style="font-size:0.85rem;color:var(--color-muted);margin:8px 0 0;">※エサバスplusのチケットには入園料が含まれるため、入園料の重複徴収はなし。当日サファリゾーンはマイカーで何度でも入れる。</p>
     </div>
 
     <div class="card" style="border-color:var(--color-accent);">
-      <h3 style="margin-top:0;">🚌 エサやりバス（推奨アクティビティ）</h3>
-      <p style="margin-bottom:8px;"><strong>3歳から子ども券で乗車可能</strong>（2歳以下のみ抱っこ無料）。マイカーサファリで触れられない動物に直接エサをやれる人気体験。席数限定なので事前ネット予約推奨。</p>
-      <dl>
-        <div><dt>エサバスplus</dt><dd>平日限定・9:50/12:30/14:30発／所要1時間40分／最大23名／ウォーキングサファリで肉食獣の餌やりも含む</dd></div>
-        <div><dt>エサやり体験バス</dt><dd>所要1時間25分／随時運行／3歳〜小学生は子ども料金</dd></div>
-        <div><dt>ベビーカー</dt><dd>バス内には持ち込めない（乗車中は預ける）</dd></div>
-      </dl>
-      <div class="actions">
-        <a class="btn map" href="https://ticket.safari.co.jp/" target="_blank" rel="noopener">🎫 オンライン予約</a>
-        <a class="btn web" href="https://safari.co.jp/tour/feeding-bus-plus/" target="_blank" rel="noopener">🌐 エサバスplus詳細</a>
-      </div>
-      <p style="font-size:0.85rem;color:var(--color-muted);margin:8px 0 0;">推奨：9:50便（朝イチで子供の元気がある時間帯）。当日朝7:00頃まで売れ残れば当日券も購入可だが、平日でも12:30便は埋まりやすい。</p>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-top:0;">3歳児向け体験</h3>
-      <dl>
-        <div><dt>ふれあいパーク</dt><dd>ウサギにニンジン100円、ヤギに青草200円（10:00〜16:00）</dd></div>
-        <div><dt>ウォーキングサファリ</dt><dd>ヤギ・ヒツジ・ロバ・シカ・マーラへの餌やり 200〜300円（9:30〜16:00）</dd></div>
-        <div><dt>無料休憩所</dt><dd>120席・屋根あり・お弁当持ち込みOK</dd></div>
-        <div><dt>おむつ替え</dt><dd>総合案内所／マルシェ／無料休憩所授乳室</dd></div>
-      </dl>
+      <h3 style="margin-top:0;">⚠ 今日中にやること（出発前）</h3>
+      <ul class="checklist">
+        <li class="critical"><a href="https://ticket.safari.co.jp/" target="_blank" rel="noopener">ticket.safari.co.jp</a> で<strong>エサバスplus 12:30便</strong>を予約（席が23名まで、平日でも埋まる）</li>
+        <li class="critical">天気予報を再確認 → <a href="https://tenki.jp/forecast/3/12/4230/10210/" target="_blank" rel="noopener">富岡市</a></li>
+        <li class="critical">チャイルドシートを車に装着確認</li>
+        <li>持ち物チェック → <a href="#pack">持ち物リスト</a></li>
+      </ul>
     </div>
   </section>
 
-  <!-- ====== LUNCH ====== -->
-  <section id="lunch">
-    <h2><span class="emoji">🍴</span>昼食プラン</h2>
+  <!-- ============================================================
+       TIMELINE - 時間ごとに「やること・施設情報・写真・口コミ・メニュー・メモ」を全部まとめる
+       ============================================================ -->
 
-    <p style="font-size:0.92rem;color:var(--color-muted);">第一候補＝サファリ園内サバンナ。混雑時・気分転換時の控えも掲載。</p>
+  <section id="t0830">
+    <h2><span class="emoji">🏠</span>08:30 自宅出発</h2>
 
     <div class="card">
-      <h3 style="margin-top:0;">★第一候補：レストラン サバンナ（園内）</h3>
+      <h3 style="margin-top:0;">ルート</h3>
+      <p>自宅 → 練馬IC → 関越道 → 藤岡JCT → 上信越道 → 富岡IC → 群馬サファリパーク</p>
       <dl>
-        <div><dt>場所</dt><dd>サファリパーク内 マルシェ棟</dd></div>
+        <div><dt>所要</dt><dd>約1時間30分〜2時間（平日朝・GW明け）</dd></div>
+        <div><dt>富岡ICから</dt><dd>約5km・10分</dd></div>
+        <div><dt>渋滞ポイント</dt><dd>練馬〜所沢、川越〜鶴ヶ島、藤岡JCT前後</dd></div>
+        <div><dt>休憩</dt><dd>上里SA（関越）か横川SA（上信越）でトイレ＋子供のリフレッシュ</dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn map" href="https://www.google.com/maps/dir/?api=1&destination=群馬サファリパーク&travelmode=driving" target="_blank" rel="noopener">🗺 Google Mapでルート</a>
+      </div>
+      <div class="kid-note">3歳児が車酔いしやすい場合は、出発1時間前に朝食を済ませる。お気に入りのおもちゃと飲み物を後部座席に。</div>
+    </div>
+  </section>
+
+  <!-- =========== 10:00 サファリ到着 =========== -->
+  <section id="t1000">
+    <h2><span class="emoji">🦒</span>10:00 群馬サファリパーク 到着</h2>
+
+    <div class="card">
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/56/White_tiger-Gunma_Safari_Park.jpg" alt="群馬サファリパーク ホワイトタイガー">
+          <figcaption>ホワイトタイガー</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Gunma_Safari_Park.jpg" alt="群馬サファリパーク 園内">
+          <figcaption>園内の動物たち</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Chital%2C_Gunma_Safari_Park_%2817093128167%29.jpg" alt="群馬サファリパークのチータル鹿">
+          <figcaption>チータル（鹿）</figcaption>
+        </figure>
+      </div>
+      <p class="photos-hint">← 横にスワイプで写真切替 →</p>
+
+      <h3 style="margin-top:8px;"><span class="time">10:00</span><span class="place-name">第1駐車場 到着</span></h3>
+      <dl>
+        <div><dt>住所</dt><dd>群馬県富岡市岡本1番地</dd></div>
+        <div><dt>電話</dt><dd><a href="tel:0274-64-2111">0274-64-2111</a></dd></div>
+        <div><dt>営業</dt><dd>9:30〜17:00（入園受付〜16:00）／水曜定休（5/14は営業）</dd></div>
+        <div><dt>駐車場</dt><dd>無料・約1,000台・平日は満車リスク低</dd></div>
+        <div><dt>料金</dt><dd>マイカー入園 大人3,200円・3歳〜小学生1,600円<br>エサバスplus追加 大人+2,500円・子+2,500円</dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=群馬サファリパーク" target="_blank" rel="noopener">🗺 Google Map</a>
+        <a class="btn tel" href="tel:0274-64-2111">📞 電話</a>
+        <a class="btn web" href="https://safari.co.jp/" target="_blank" rel="noopener">🌐 公式</a>
+        <a class="btn web" href="https://ticket.safari.co.jp/" target="_blank" rel="noopener">🎫 予約サイト</a>
+      </div>
+
+      <h4 style="margin:14px 0 6px;">到着したらやること</h4>
+      <ul style="margin:0;padding-left:18px;font-size:0.93rem;">
+        <li>チケット売場でエサバスplus予約QRを提示／当日券購入</li>
+        <li>総合案内所のトイレ・おむつ替え（サファリエリア内はトイレが少ない）</li>
+        <li>ふれあいパーク方面へ徒歩で移動</li>
+      </ul>
+
+      <div class="review">
+        <p>「車で周れるので大きな動物園より歩き疲れず、子どもも最後まで元気。ライオンが近く、歩きゾーンの餌やりも楽しめた」</p>
+        <p class="src">— <a href="https://iko-yo.net/facilities/213/experiences" target="_blank" rel="noopener">いこーよ</a></p>
+      </div>
+      <div class="kid-note">入場前にトイレ必須。サファリエリア内はトイレが少ない。エサバスplusは12:30便なので、それまでをふれあい・ウォーキングで過ごす。</div>
+    </div>
+  </section>
+
+  <!-- =========== 10:30 ふれあいパーク・ウォーキング =========== -->
+  <section id="t1030">
+    <h2><span class="emoji">🐰</span>10:30 ふれあいパーク・ウォーキングサファリ</h2>
+
+    <div class="card">
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/07/animal-feeding169_garelly07-800x450.jpg" alt="動物に餌やり">
+          <figcaption>動物への餌やり</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/07/yakushima-goat_grelly01.jpg" alt="ヤギ">
+          <figcaption>ヤギにエサやり</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/06/pygmy-goat_grelly01.jpg" alt="ピグミーゴート">
+          <figcaption>ピグミーゴート</figcaption>
+        </figure>
+      </div>
+      <p class="photos-hint">← 横にスワイプで写真切替 →</p>
+
+      <h3 style="margin-top:8px;"><span class="time">10:30〜12:00</span><span class="place-name">3歳児の主役タイム</span></h3>
+      <p class="summary">エサバスplus（12:30発）まで、ふれあい体験で動物に直接餌をあげる時間。3歳児が最も楽しめるエリア。</p>
+
+      <dl>
+        <div><dt>営業</dt><dd>ふれあいパーク 10:00〜16:00／ウォーキングサファリ 9:30〜16:00</dd></div>
+        <div><dt>料金</dt><dd>ウサギにニンジン 100円<br>ヤギに青草 200円<br>ヤギ・ヒツジ・ロバ・シカ・マーラへの餌やり 200〜300円</dd></div>
+        <div><dt>支払い</dt><dd>小銭が便利</dd></div>
+      </dl>
+
+      <h4 style="margin:14px 0 6px;">3歳児に特に人気</h4>
+      <ul style="margin:0;padding-left:18px;font-size:0.93rem;">
+        <li>🐰 ウサギにニンジン（一番安全・小さい子向け）</li>
+        <li>🐐 ヤギに青草（手から食べる体験、警戒する子は注意）</li>
+        <li>🦌 シカに餌やり（少し怖がるかも、保護者と一緒に）</li>
+      </ul>
+
+      <div class="kid-note">小銭多めに用意。ウェットティッシュも必須。動物に手を出した後は必ず手洗い。怖がる子はウサギから始める。</div>
+    </div>
+  </section>
+
+  <!-- =========== 12:00 エサバスplus受付 =========== -->
+  <section>
+    <h2><span class="emoji">⏰</span>12:00 エサバスplus受付・トイレ</h2>
+    <div class="card">
+      <p style="margin:0 0 8px;">エサバスplus 12:30便のチェックインは12:00〜12:25。バスにはトイレなしなので乗車前に必ずトイレ。</p>
+      <ul style="margin:0;padding-left:18px;font-size:0.93rem;">
+        <li>総合案内所か無料休憩所授乳室でおむつ替え</li>
+        <li>水分補給</li>
+        <li>カメラ・スマホをすぐ出せる位置に</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =========== 12:30 エサバスplus =========== -->
+  <section id="t1230">
+    <h2><span class="emoji">🚌</span>12:30 エサバスplus（メインイベント）</h2>
+
+    <div class="card" style="border-color:var(--color-accent); background:#fffaf0;">
+      <span class="label">本日の主役</span>
+
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/06/ride-the-feeding-bus_eyecatch_32_720-480-600x400.jpg" alt="エサバスplus 外観">
+          <figcaption>エサバス外観</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/06/ride-the-feeding-bus_garelly01_169_960-540-800x450.jpg" alt="エサバスplus 風景">
+          <figcaption>ライオンに肉やり体験</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/06/ride-the-feeding-bus_garelly02_169_960-540-800x450.jpg" alt="エサバスplus 動物との距離">
+          <figcaption>動物との距離感</figcaption>
+        </figure>
+      </div>
+      <p class="photos-hint">← 横にスワイプで写真切替 →</p>
+
+      <h3 style="margin-top:8px;"><span class="time">12:30〜14:10</span><span class="place-name">所要1時間40分</span></h3>
+
+      <dl>
+        <div><dt>料金</dt><dd>大人5,700円・子供4,100円（入園料込み）</dd></div>
+        <div><dt>定員</dt><dd>最大23名（席数限定）</dd></div>
+        <div><dt>平日便</dt><dd>9:50 / 12:30 / 14:30</dd></div>
+        <div><dt>体験内容</dt><dd>サファリゾーンで草食動物へのエサやり＋ウォーキングサファリで<strong>ライオン・ホワイトタイガーへの肉やり体験</strong></dd></div>
+        <div><dt>3歳児</dt><dd>子ども料金で乗車可（2歳以下のみ抱っこ無料）</dd></div>
+        <div><dt>ベビーカー</dt><dd>バスには持ち込み不可。下車時預け</dd></div>
+      </dl>
+
+      <div class="actions">
+        <a class="btn map" href="https://ticket.safari.co.jp/" target="_blank" rel="noopener">🎫 ネット予約</a>
+        <a class="btn web" href="https://safari.co.jp/tour/feeding-bus-plus/" target="_blank" rel="noopener">🌐 エサバスplus公式</a>
+      </div>
+
+      <div class="review">
+        <p>「エサバスplusはライオンとの距離が非常に近く、ガイドの話も上手。笑いと学びがあり、満足度が高い」</p>
+        <p class="src">— <a href="https://expert-child-rearing.com/gunma-safari-park-review/" target="_blank" rel="noopener">体験ブログ</a></p>
+      </div>
+      <div class="review">
+        <p>「3歳の子もエサやりバスで草食動物やライオンに餌をあげる時に大興奮。最高の笑顔が見られた」</p>
+        <p class="src">— <a href="https://feature.cozre.jp/item/2643/reviews" target="_blank" rel="noopener">コズレ</a></p>
+      </div>
+      <div class="kid-note">動物が近く音も迫力あり、怖がる子は要注意。所要1時間40分なので乗車前トイレ・水分必須。窓越しに肉やりするので軍手や手拭きあると便利。</div>
+    </div>
+  </section>
+
+  <!-- =========== 14:20 昼食 =========== -->
+  <section id="t1420">
+    <h2><span class="emoji">🍴</span>14:20 昼食</h2>
+
+    <div class="card">
+      <span class="label">第一候補</span>
+
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/06/139a1db8ebac40c6ad0350f5ecbf15f1-600x400.png" alt="カツカレー">
+          <figcaption>カツカレー</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/06/496acec5c89f97d0e1827b9bd57d63da-600x400.png" alt="上州牛バーガー">
+          <figcaption>上州牛バーガー</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://safari.co.jp/wordpress/wp-content/uploads/2025/06/21fa97d1e00fa17d76c47a4bd4a2a7c3-600x400.png" alt="サバンナカレー">
+          <figcaption>サバンナカレー</figcaption>
+        </figure>
+      </div>
+      <p class="photos-hint">← 横にスワイプで写真切替 →</p>
+
+      <h3 style="margin-top:8px;"><span class="time">14:20</span><span class="place-name">レストラン サバンナ（園内）</span></h3>
+      <dl>
         <div><dt>営業</dt><dd>11:00〜15:30（15:00 LO）</dd></div>
-        <div><dt>席数</dt><dd>120席（団体席含めて380席）／ファミリー席あり</dd></div>
-        <div><dt>狙い目</dt><dd>11時台前半 or 13:30以降（12時台はピーク）</dd></div>
+        <div><dt>席数</dt><dd>120席＋団体380席／ファミリー席あり</dd></div>
+        <div><dt>狙い目</dt><dd>14時台は混雑緩和、エサバス降車直後で立地◎</dd></div>
       </dl>
 
       <h4 style="margin:14px 0 6px;">大人向けメニュー</h4>
@@ -190,16 +292,16 @@
         <li>サバンナカレー 1,200円</li>
         <li>カツカレー 1,500円</li>
         <li>カツ重 1,400円</li>
-        <li>2種のナンカレー 1,800円</li>
+        <li>2種のナンカレー（バターチキン＆グリーン）1,800円</li>
         <li>チャーシューメン 1,300円</li>
         <li>ホンドギツネうどん 1,000円</li>
         <li>上州牛バーガー 2,000円</li>
         <li>チャーハン 1,000円</li>
       </ul>
 
-      <h4 style="margin:14px 0 6px;">お子様メニュー（3歳に最適）</h4>
+      <h4 style="margin:14px 0 6px;">お子様メニュー</h4>
       <ul class="menu">
-        <li>🐰 うさちゃんカレー 800円 ／ <strong>卵・小麦・乳・そば・エビ・カニ・落花生・大豆 不使用</strong></li>
+        <li>🐰 うさちゃんカレー 800円<br><small>卵・小麦・乳・そば・エビ・カニ・落花生・大豆 不使用</small></li>
         <li>🍛 お子様チャーハン 850円</li>
         <li>🍱 キッズプレート 1,000円</li>
         <li>🦒 キリンぽてからセット 900円</li>
@@ -209,146 +311,329 @@
         <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=レストランサバンナ+群馬サファリパーク" target="_blank" rel="noopener">🗺 Map</a>
         <a class="btn web" href="https://safari.co.jp/shop/restaurant-savanna/" target="_blank" rel="noopener">🌐 メニュー詳細</a>
       </div>
+
+      <div class="review">
+        <p>「上州牛ステーキは最近食べたステーキで一番おいしいという満足口コミ。園内食でも期待できる」</p>
+        <p class="src">— <a href="https://www.asoview.com/asorepo/2714018/" target="_blank" rel="noopener">アソビュー</a></p>
+      </div>
+      <div class="kid-note">15:00ラストオーダーなので14:30までには注文を。昼ピークは過ぎているが、エサバス降車直後の客が集中する可能性あり。</div>
     </div>
 
-    <div class="card">
-      <h3 style="margin-top:0;">控え①：こんにゃくパーク（無料バイキング）</h3>
-      <p class="summary">食事と観光を兼ねたい時に。3歳児には麺類を小さく切る・ゼリーは喉に注意。<a href="#konnyaku">→ 詳細</a></p>
-    </div>
+    <!-- 控え1: 道の駅甘楽 -->
+    <div class="alt-card">
+      <h4><span class="label alt">控え①</span>道の駅 甘楽 食堂・地粉ピザ</h4>
 
-    <div class="card">
-      <h3 style="margin-top:0;">控え②：道の駅 甘楽</h3>
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Michinoeki_Kanra.JPG" alt="道の駅甘楽 外観">
+          <figcaption>道の駅 甘楽</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Michinoeki_Kanra_former_Matsui_residence_1.jpg" alt="道の駅甘楽">
+          <figcaption>施設内</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Michinoeki_Kanra_former_Matsui_residence_2.jpg" alt="道の駅甘楽">
+          <figcaption>休憩スペース</figcaption>
+        </figure>
+      </div>
+
       <dl>
         <div><dt>住所</dt><dd>群馬県甘楽郡甘楽町小幡444-1</dd></div>
         <div><dt>営業</dt><dd>食堂 11:00〜15:00 LO／フードコート 10:30〜16:30 LO</dd></div>
-        <div><dt>定休</dt><dd>1/1、2月第1火、6月第4火</dd></div>
-        <div><dt>子連れ</dt><dd>駐車広め・トイレ・軽食まとまる</dd></div>
+        <div><dt>定休</dt><dd>1/1、2月第1火、6月第4火（5/14営業）</dd></div>
+        <div><dt>駐車場</dt><dd>無料・広い</dd></div>
+        <div><dt>子連れ</dt><dd><strong>小上がり座敷あり</strong>・3歳児向け最有力</dd></div>
+        <div><dt>サファリから</dt><dd>車約10分</dd></div>
       </dl>
+
+      <h5 style="margin:10px 0 4px;">名物</h5>
+      <ul class="menu">
+        <li>桃太郎ごはん（餅キビ＋キジ炊き込み）500円</li>
+        <li>マルゲリータ（地粉石窯ピザ）930円</li>
+        <li>轟みそピザ 900円</li>
+        <li>クワトロフォルマッジ 1,100円</li>
+        <li>キジそば定食 1,280円</li>
+      </ul>
+
       <div class="actions">
         <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=道の駅甘楽" target="_blank" rel="noopener">🗺 Map</a>
         <a class="btn web" href="https://www.town.kanra.lg.jp/s-busan/busan/news/04.html" target="_blank" rel="noopener">🌐 公式</a>
       </div>
+
+      <div class="review">
+        <p>「桃太郎ごはんは餅キビとキジ入りの炊き込みで美味。小上がり座敷があり子連れも安心」</p>
+        <p class="src">— <a href="https://www.tripadvisor.jp/Restaurant_Review-g1121067-d7362150-Reviews-Michi_no_Eki_Kanara-Kanra_machi_Kanra_gun_Gunma_Prefecture_Kanto.html" target="_blank" rel="noopener">Tripadvisor</a></p>
+      </div>
+      <div class="review">
+        <p>「石窯ピザは本格的で人気。地元食材の食堂と物産をまとめて楽しめる」</p>
+        <p class="src">— <a href="https://www.jalan.net/kankou/spt_10384cc3362013657/kuchikomi/0005394839/" target="_blank" rel="noopener">じゃらん</a></p>
+      </div>
+      <div class="kid-note">食堂は15時LOで短め。ピザやご飯ものは取り分け可。サファリ→道の駅甘楽は移動10分なのでサファリ退園後の昼食向き。</div>
     </div>
 
-    <div class="card">
-      <h3 style="margin-top:0;">控え③：ガスト 群馬富岡店（安全牌）</h3>
+    <!-- 控え2: 手打ちそば大村支店 -->
+    <div class="alt-card">
+      <h4><span class="label alt">控え②</span>手打ちそば 大村支店（富岡製糸場前）</h4>
+
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://www.tomioka-silk.jp/files/topics/47_ext_09_0_L.jpg" alt="ソースひれかつ丼ご膳">
+          <figcaption>ソースひれかつ丼ご膳</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://www.tomioka-silk.jp/files/topics/47_ext_08_6_L.jpg" alt="店舗外観">
+          <figcaption>店舗外観</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://www.tomioka-silk.jp/files/topics/47_ext_09_6_L.jpg" alt="ぶっかけマッスルしいたけそば">
+          <figcaption>ぶっかけマッスルしいたけそば</figcaption>
+        </figure>
+      </div>
+
+      <dl>
+        <div><dt>住所</dt><dd>群馬県富岡市富岡1178-1</dd></div>
+        <div><dt>営業</dt><dd>11:00〜14:30 / 17:00〜19:30</dd></div>
+        <div><dt>駐車場</dt><dd>専用10台</dd></div>
+        <div><dt>名物</dt><dd>野菜ソムリエの店長による地元野菜＆秘伝和風ソースかつ丼</dd></div>
+        <div><dt>サファリから</dt><dd>車約15分</dd></div>
+      </dl>
+
+      <ul class="menu">
+        <li>ソースひれかつ丼ご膳（平日限定）1,000円</li>
+        <li>ぶっかけマッスルしいたけそば 1,050円</li>
+        <li>せいろ（北海道産そば粉）</li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=手打ちそば大村支店+富岡" target="_blank" rel="noopener">🗺 Map</a>
+        <a class="btn web" href="https://silksoba.com/about" target="_blank" rel="noopener">🌐 公式</a>
+        <a class="btn web" href="https://www.tomioka-silk.jp/_shop/restaurant/detail/oomura-shiten.html" target="_blank" rel="noopener">📖 観光協会</a>
+      </div>
+
+      <div class="review">
+        <p>「冷やしたぬきそばは具材彩りよく、細麺コシあり、出汁の効いたあっさり醤油スープで美味」</p>
+        <p class="src">— <a href="https://www.gunlabo.net/shop/shop.shtml?s=3838" target="_blank" rel="noopener">ぐんラボ</a></p>
+      </div>
+      <div class="kid-note">そばアレルギー確認は必須。富岡製糸場とセットで回るなら最適。14:30LOで時間注意。</div>
+    </div>
+
+    <!-- 控え3: こんにゃくパーク (バイキング) -->
+    <div class="alt-card">
+      <h4><span class="label alt">控え③</span>こんにゃくパーク 無料バイキング</h4>
+      <p style="margin:0 0 6px;font-size:0.9rem;">後ほど15:30で寄る予定の施設。昼食を兼ねるなら、エサバスplus後に直行してバイキング＋工場見学＋お土産。<a href="#t1530">→ 詳細</a></p>
+    </div>
+
+    <!-- 控え4: ガスト -->
+    <div class="alt-card">
+      <h4><span class="label warn">控え④（安全牌）</span>ガスト 群馬富岡店</h4>
       <dl>
         <div><dt>住所</dt><dd>富岡市富岡2651-1</dd></div>
-        <div><dt>営業</dt><dd>8:00〜23:30／無休／駐車場あり</dd></div>
-        <div><dt>子連れ</dt><dd>キッズメニュー充実・確実な避難先</dd></div>
+        <div><dt>営業</dt><dd>8:00〜23:30・無休</dd></div>
+        <div><dt>子連れ</dt><dd>キッズメニュー・キッズチェア完備</dd></div>
       </dl>
       <div class="actions">
         <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=ガスト群馬富岡店" target="_blank" rel="noopener">🗺 Map</a>
         <a class="btn web" href="https://www.skylark.co.jp/gusto/" target="_blank" rel="noopener">🌐 公式</a>
       </div>
+      <div class="kid-note">子供がぐずってもう外食キツい時の最終避難先。営業時間が長いので時間が押しても安心。</div>
     </div>
   </section>
 
-  <!-- ====== KONNYAKU PARK ====== -->
-  <section id="konnyaku">
-    <h2><span class="emoji">🌿</span>こんにゃくパーク</h2>
+  <!-- =========== 15:30 午後の選択肢 =========== -->
+  <section id="t1530">
+    <h2><span class="emoji">☀</span>15:30 午後の選択肢</h2>
 
+    <!-- メイン: こんにゃくパーク -->
     <div class="card">
-      <h3 style="margin-top:0;">基本情報</h3>
+      <span class="label alt">メイン候補</span>
+
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://ittenbe.jp/wp-content/uploads/2024/08/conjac_2024-11-27_ph01-1.jpg" alt="こんにゃくパーク 外観">
+          <figcaption>こんにゃくパーク 外観</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://ittenbe.jp/wp-content/uploads/2024/08/conjac_2024-11-27_ph02-1.jpg" alt="こんにゃくパーク バイキング">
+          <figcaption>無料バイキング</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://ittenbe.jp/wp-content/uploads/2024/08/conjac_2024-11-27_ph03-1.jpg" alt="こんにゃくパーク 工場見学">
+          <figcaption>工場見学</figcaption>
+        </figure>
+      </div>
+      <p class="photos-hint">← 横にスワイプで写真切替 →</p>
+
+      <h3 style="margin-top:8px;"><span class="time">15:30〜17:00</span><span class="place-name">こんにゃくパーク</span></h3>
       <dl>
-        <div><dt>住所</dt><dd>群馬県甘楽郡甘楽町小幡204-1</dd></div>
+        <div><dt>住所</dt><dd>甘楽郡甘楽町小幡204-1</dd></div>
         <div><dt>電話</dt><dd><a href="tel:0274-60-4100">0274-60-4100</a></dd></div>
         <div><dt>営業</dt><dd>9:00〜18:00（最終受付17:00）</dd></div>
-        <div><dt>定休</dt><dd>5/14は通常営業（木曜は工場ライン稼働日）</dd></div>
-        <div><dt>料金</dt><dd>入館無料・工場見学無料・バイキング無料</dd></div>
-        <div><dt>駐車場</dt><dd>無料・第1〜第7まで</dd></div>
-        <div><dt>サファリから</dt><dd>車で約10〜15分</dd></div>
+        <div><dt>料金</dt><dd>すべて無料（入館・工場見学・バイキング・駐車場）</dd></div>
+        <div><dt>サファリから</dt><dd>車約10〜15分</dd></div>
       </dl>
+
+      <h4 style="margin:14px 0 6px;">無料バイキング日替わり例</h4>
+      <ul class="menu">
+        <li>田楽味噌おでん／玉こんにゃく煮物</li>
+        <li>こんにゃく醤油ラーメン／冷やし中華こんにゃく</li>
+        <li>こんにゃくソース焼きそば／特製カレー</li>
+        <li>キムチこんにゃく／レバ刺し風こんにゃく</li>
+        <li>こんにゃくプリン／寒天デザート</li>
+      </ul>
+
       <div class="actions">
-        <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=こんにゃくパーク+甘楽町" target="_blank" rel="noopener">🗺 Google Map</a>
+        <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=こんにゃくパーク+甘楽町" target="_blank" rel="noopener">🗺 Map</a>
         <a class="btn tel" href="tel:0274-60-4100">📞 電話</a>
         <a class="btn web" href="https://www.konnyaku-park.com/" target="_blank" rel="noopener">🌐 公式</a>
       </div>
+
+      <div class="review">
+        <p>「工場見学とバイキングが無料で、アレンジ料理が豊富。足湯や土産もあり家族で長く楽しめる」</p>
+        <p class="src">— <a href="https://www.ekiten.jp/shop_6055532/review/" target="_blank" rel="noopener">エキテン</a></p>
+      </div>
+      <div class="review">
+        <p>「3歳前後でも無料で工場見学・バイキング・屋外プレイゾーンまで回れ、低予算のお出かけ先として便利」</p>
+        <p class="src">— <a href="https://acoiihi.com/konnyaku_park_3sai/" target="_blank" rel="noopener">3歳児ブログ</a></p>
+      </div>
+      <div class="kid-note">こんにゃく・ゼリーは誤嚥注意で必ず小さく切る。屋外に遊び広場・ミニ観覧車・足湯あり。雨天時の鉄板スポット。</div>
     </div>
 
-    <div class="card">
-      <h3 style="margin-top:0;">🍱 無料バイキング（約15種類）</h3>
-      <p style="font-size:0.9rem;color:var(--color-muted);">日替わりで内容は変動。直近の訪問者レポートで確認できたメニュー例：</p>
-      <ul class="menu">
-        <li>田楽味噌おでん</li>
-        <li>玉こんにゃく煮物</li>
-        <li>こんにゃく醤油ラーメン</li>
-        <li>冷やし中華こんにゃく</li>
-        <li>こんにゃくソース焼きそば</li>
-        <li>特製こんにゃくカレー</li>
-        <li>キムチこんにゃく</li>
-        <li>レバ刺し風こんにゃく</li>
-        <li>こんにゃくアヒージョ</li>
-        <li>こんにゃくプリン</li>
-        <li>寒天デザート</li>
-      </ul>
-      <p style="font-size:0.85rem;color:var(--color-warning);margin:10px 0 0;">⚠ 3歳児は喉に詰まりやすいので小さく切る・ゼリー系はゆっくり食べさせる。</p>
-    </div>
+    <!-- 晴: もみじ平 -->
+    <div class="alt-card">
+      <h4><span class="label">☀ 晴れ</span>もみじ平総合公園</h4>
 
-    <div class="card">
-      <h3 style="margin-top:0;">楽しめるポイント</h3>
-      <ul style="margin:0 0 0 18px;padding:0;">
-        <li>工場見学（板こんにゃく・しらたき・ゼリーの3ライン／自由見学20〜30分）</li>
-        <li>無料こんにゃくバイキング（15種類）</li>
-        <li>お土産売店（こんにゃくゼリー詰め合わせ等）</li>
-        <li>屋外の遊び広場・ミニ観覧車・足湯</li>
-        <li>雨天時の鉄板スポット（屋内中心）</li>
-      </ul>
-    </div>
-  </section>
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://www.city.tomioka.lg.jp/www/contents/1740012163959/simple/250220140925_6.jpg" alt="もみじ平総合公園 遊具">
+          <figcaption>複合遊具</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://www.city.tomioka.lg.jp/www/contents/1740012163959/simple/250220140925_8.jpg" alt="もみじ平総合公園">
+          <figcaption>遊び場</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://www.city.tomioka.lg.jp/www/contents/1740012163959/simple/250130144806_1.jpg" alt="もみじ平総合公園 風景">
+          <figcaption>公園全景</figcaption>
+        </figure>
+      </div>
 
-  <!-- ====== AFTERNOON OPTIONS ====== -->
-  <section id="afternoon">
-    <h2><span class="emoji">☀</span>午後の選択肢</h2>
-
-    <div class="plan-box">
-      <h4>☀ 晴れの場合：もみじ平総合公園</h4>
-      <p style="margin:0 0 8px;">3歳〜6歳向け遊具・1〜3歳向け柵付きエリア・水遊び（9:00〜17:00）。授乳室・おむつ替えあり。</p>
+      <dl>
+        <div><dt>遊具</dt><dd>3〜6歳向け遊具・1〜3歳柵付きエリア・長いローラーすべり台</dd></div>
+        <div><dt>水遊び</dt><dd>9:00〜17:00</dd></div>
+        <div><dt>設備</dt><dd>授乳室・おむつ替えあり</dd></div>
+      </dl>
       <div class="actions">
         <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=もみじ平総合公園" target="_blank" rel="noopener">🗺 Map</a>
         <a class="btn web" href="https://www.city.tomioka.lg.jp/www/contents/1740012163959/index.html" target="_blank" rel="noopener">🌐 富岡市公式</a>
       </div>
+      <div class="review">
+        <p>「広い芝生や長い斜面のすべり台が子どものお気に入り。自然史博物館と組み合わせて使いやすい」</p>
+        <p class="src">— <a href="https://comolib.com/places/658839" target="_blank" rel="noopener">コモリブ</a></p>
+      </div>
+      <div class="kid-note">園内が広く斜面もあるため迷子・転倒注意。ローラーすべり台は大人が近くで見守る前提。</div>
     </div>
 
-    <div class="plan-box rain">
-      <h4>☔ 雨の場合：群馬県立自然史博物館</h4>
-      <p style="margin:0 0 8px;">もみじ平に隣接。屋内で恐竜の全身骨格・ジオラマ。3歳児にも視覚的に楽しめる。</p>
+    <!-- 雨: 自然史博物館 -->
+    <div class="alt-card">
+      <h4><span class="label rain">☔ 雨</span>群馬県立自然史博物館</h4>
+
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://www.gmnh.pref.gunma.jp/wp-content/uploads/main.jpg" alt="群馬県立自然史博物館">
+          <figcaption>博物館</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://www.gmnh.pref.gunma.jp/wp-content/uploads/TOP1.jpg" alt="自然史博物館 展示">
+          <figcaption>恐竜展示</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://www.gmnh.pref.gunma.jp/wp-content/uploads/15-scaled.jpg" alt="自然史博物館 館内">
+          <figcaption>館内</figcaption>
+        </figure>
+      </div>
+
+      <dl>
+        <div><dt>料金</dt><dd>中学生以下無料</dd></div>
+        <div><dt>展示</dt><dd>動く実物大ティラノサウルス・恐竜全身骨格</dd></div>
+        <div><dt>立地</dt><dd>もみじ平総合公園に隣接</dd></div>
+      </dl>
       <div class="actions">
         <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=群馬県立自然史博物館" target="_blank" rel="noopener">🗺 Map</a>
         <a class="btn web" href="https://www.gmnh.pref.gunma.jp/" target="_blank" rel="noopener">🌐 公式</a>
       </div>
+      <div class="review">
+        <p>「3歳と7歳の子が動くティラノサウルスに釘付け。恐竜だけでなく家の中の生き物展示まで印象に残る」</p>
+        <p class="src">— <a href="https://iko-yo.net/experiences/50547" target="_blank" rel="noopener">いこーよ</a></p>
+      </div>
+      <div class="kid-note">動くティラノは怖がる子もいる。怖がったら抱っこ・順路スキップ前提。中学生以下無料なので入りやすい。</div>
     </div>
 
-    <div class="card">
-      <h3 style="margin-top:0;">体力に余裕があれば：富岡製糸場</h3>
+    <!-- 余力あれば: 富岡製糸場 -->
+    <div class="alt-card">
+      <h4><span class="label warn">体力余力</span>富岡製糸場（世界遺産）</h4>
+
+      <div class="photos">
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Tomioka_Silk_Mill_Main_Building.JPG" alt="富岡製糸場 本館">
+          <figcaption>東置繭所</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Tomioka_Silk_Mill_Silk-reeling_Mill_01.JPG" alt="富岡製糸場 繰糸所">
+          <figcaption>繰糸所</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Tomioka_Silk_Mill_Machine.JPG" alt="富岡製糸場 機械">
+          <figcaption>製糸機械</figcaption>
+        </figure>
+      </div>
+
       <dl>
         <div><dt>営業</dt><dd>9:00〜17:00（最終入場16:30）</dd></div>
         <div><dt>所要</dt><dd>1〜1.5時間</dd></div>
-        <div><dt>駐車</dt><dd>施設内駐車場なし・周辺有料駐車場利用</dd></div>
+        <div><dt>駐車</dt><dd>施設内なし・周辺有料利用</dd></div>
       </dl>
       <div class="actions">
         <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=富岡製糸場" target="_blank" rel="noopener">🗺 Map</a>
         <a class="btn web" href="https://www.tomioka-silk.jp/" target="_blank" rel="noopener">🌐 公式</a>
       </div>
+      <div class="review">
+        <p>「世界遺産の赤レンガ建築や当時の機械が残り、ガイド付きだと歴史の背景まで理解しやすい」</p>
+        <p class="src">— <a href="https://www.ekiten.jp/shop_4253608/" target="_blank" rel="noopener">エキテン</a></p>
+      </div>
+      <div class="kid-note">史跡中心で幼児には退屈になりやすい。3歳児は20〜30分で限界かも。ベビーカー段差、暑さ寒さ対策必須。</div>
+    </div>
+  </section>
+
+  <!-- =========== 17:00 帰路 =========== -->
+  <section id="t1700">
+    <h2><span class="emoji">🏁</span>17:00 帰路</h2>
+    <div class="card">
+      <p>富岡IC → 上信越道 → 関越道 → 練馬IC。<br>夕方の渋滞は関越下り側より上り側が重い時間帯。横川SAか高坂SAで子供のトイレ＋夕飯軽くつまむ。</p>
+      <ul style="margin:0;padding-left:18px;font-size:0.93rem;">
+        <li>子供が寝ていたら無理に起こさない</li>
+        <li>夕飯はSAでつまむ or 帰宅後</li>
+      </ul>
+      <p style="margin:8px 0 0;font-size:0.9rem;color:var(--color-muted);">想定自宅着 18:30〜19:30</p>
     </div>
   </section>
 
   <!-- ====== PACK LIST ====== -->
   <section id="pack">
-    <h2><span class="emoji">🎒</span>持ち物チェック</h2>
+    <h2><span class="emoji">🎒</span>持ち物</h2>
 
     <div class="card">
       <h3 style="margin-top:0;">必須（前夜に準備）</h3>
       <ul class="checklist">
-        <li class="critical">サファリ入園券＋エサバスplus予約QR（スマホ画面）</li>
-        <li class="critical">現金（園内売店・有料駐車場・餌やり用小銭）</li>
-        <li class="critical">チャイルドシート（マイカーサファリで必須）</li>
-        <li>3歳児の着替え一式（汗・水遊び対策）</li>
+        <li class="critical">エサバスplus予約QR（スマホ画面）</li>
+        <li class="critical">現金（餌やり・売店・有料駐車場用の小銭多め）</li>
+        <li class="critical">チャイルドシート</li>
+        <li>3歳児の着替え一式</li>
         <li>おむつ＆おしりふき</li>
         <li>ウェットティッシュ・ティッシュ</li>
         <li>水筒・おやつ（ぐずり対策）</li>
         <li>帽子・日焼け止め</li>
-        <li>レインコート（雨天時）・防水靴</li>
+        <li>レインコート・防水靴（雨天時）</li>
         <li>タオル2枚</li>
         <li>モバイルバッテリー＋ケーブル</li>
         <li>ジップロック（汚れもの収納）</li>
@@ -359,81 +644,27 @@
     <div class="card">
       <h3 style="margin-top:0;">あると便利</h3>
       <ul class="checklist">
-        <li>カメラ／スマホ用ストラップ</li>
-        <li>双眼鏡（遠くの動物観察）</li>
-        <li>子供のお気に入りのおもちゃ1〜2個</li>
-        <li>車内用ブランケット（寝ちゃった時用）</li>
-        <li>使い捨て手袋（餌やり後の手拭き用）</li>
+        <li>双眼鏡（マイカーサファリの遠目の動物）</li>
+        <li>カメラ（スマホ＋本格カメラ）</li>
+        <li>子供のお気に入りのおもちゃ</li>
+        <li>車内用ブランケット（寝た時用）</li>
+        <li>軍手（餌やり後の手拭き用）</li>
         <li>ゴミ袋小×3</li>
       </ul>
     </div>
-  </section>
-
-  <!-- ====== RAIN PLAN ====== -->
-  <section id="rain">
-    <h2><span class="emoji">☔</span>雨天プラン</h2>
-    <div class="plan-box rain">
-      <p style="margin:0 0 6px;"><strong>結論：サファリは雨でも実施。中止せずに行く。</strong></p>
-      <ul style="margin:0;padding-left:20px;">
-        <li>マイカーサファリは雨でも問題なし（むしろ車内なので快適）</li>
-        <li>動物の出方は減るが、見えなくはない</li>
-        <li>ウォーキングサファリ・ふれあいパークは短縮</li>
-        <li>午後はもみじ平→<strong>自然史博物館</strong>＋こんにゃくパーク（屋内）に寄せる</li>
-        <li>子供の防水靴・レインコート・替え靴下・タオルを車に追加積み</li>
-      </ul>
-    </div>
-    <p style="font-size:0.88rem;color:var(--color-muted);">前日夜と当日朝、必ず<a href="https://tenki.jp/forecast/3/12/4230/10210/" target="_blank" rel="noopener">富岡市の天気予報</a>を確認。</p>
   </section>
 
   <!-- ====== EMERGENCY ====== -->
   <section id="emergency">
     <h2><span class="emoji">📞</span>緊急連絡先</h2>
     <div class="emergency">
-      <div class="tel-row">
-        <span>群馬サファリパーク</span>
-        <a href="tel:0274-64-2111">0274-64-2111</a>
-      </div>
-      <div class="tel-row">
-        <span>こんにゃくパーク</span>
-        <a href="tel:0274-60-4100">0274-60-4100</a>
-      </div>
-      <div class="tel-row">
-        <span>富岡製糸場</span>
-        <a href="tel:0274-67-0075">0274-67-0075</a>
-      </div>
-      <div class="tel-row">
-        <span>富岡警察署</span>
-        <a href="tel:0274-63-0110">0274-63-0110</a>
-      </div>
-      <div class="tel-row">
-        <span>救急（一般）</span>
-        <a href="tel:119">119</a>
-      </div>
-      <div class="tel-row">
-        <span>群馬県こども医療電話相談</span>
-        <a href="tel:%238000">＃8000</a>
-      </div>
-      <div class="tel-row">
-        <span>JAFロードサービス</span>
-        <a href="tel:0570-00-8139">0570-00-8139</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== INFO SOURCES ====== -->
-  <section>
-    <h2><span class="emoji">🔗</span>情報源</h2>
-    <div class="card">
-      <p style="font-size:0.85rem;color:var(--color-muted);margin:0 0 8px;">この旅のしおりは以下の公式情報をもとに作成（2026/5/12時点）：</p>
-      <ul style="font-size:0.85rem;margin:0;padding-left:18px;">
-        <li><a href="https://safari.co.jp/" target="_blank" rel="noopener">群馬サファリパーク公式</a></li>
-        <li><a href="https://safari.co.jp/tour/feeding-bus-plus/" target="_blank" rel="noopener">エサバスplus公式</a></li>
-        <li><a href="https://safari.co.jp/shop/restaurant-savanna/" target="_blank" rel="noopener">レストラン サバンナ メニュー</a></li>
-        <li><a href="https://www.konnyaku-park.com/" target="_blank" rel="noopener">こんにゃくパーク公式</a></li>
-        <li><a href="https://www.city.tomioka.lg.jp/www/contents/1740012163959/index.html" target="_blank" rel="noopener">もみじ平総合公園 富岡市</a></li>
-        <li><a href="https://www.gmnh.pref.gunma.jp/" target="_blank" rel="noopener">群馬県立自然史博物館</a></li>
-        <li><a href="https://www.tomioka-silk.jp/" target="_blank" rel="noopener">富岡製糸場</a></li>
-      </ul>
+      <div class="tel-row"><span>群馬サファリパーク</span><a href="tel:0274-64-2111">0274-64-2111</a></div>
+      <div class="tel-row"><span>こんにゃくパーク</span><a href="tel:0274-60-4100">0274-60-4100</a></div>
+      <div class="tel-row"><span>富岡製糸場</span><a href="tel:0274-67-0075">0274-67-0075</a></div>
+      <div class="tel-row"><span>富岡警察署</span><a href="tel:0274-63-0110">0274-63-0110</a></div>
+      <div class="tel-row"><span>救急</span><a href="tel:119">119</a></div>
+      <div class="tel-row"><span>こども医療相談</span><a href="tel:%238000">＃8000</a></div>
+      <div class="tel-row"><span>JAFロード</span><a href="tel:0570-00-8139">0570-00-8139</a></div>
     </div>
   </section>
 
@@ -441,9 +672,9 @@
 
 <!-- ====== BOTTOM FIXED NAV ====== -->
 <nav class="bottom-nav" aria-label="クイックアクション">
-  <a href="#timeline"><span class="icn">🕘</span>時刻表</a>
+  <a href="#t1230"><span class="icn">🚌</span>エサバス</a>
   <a href="https://www.google.com/maps/search/?api=1&query=群馬サファリパーク" target="_blank" rel="noopener"><span class="icn">🗺</span>地図</a>
-  <a href="#lunch"><span class="icn">🍴</span>昼食</a>
+  <a href="#t1420"><span class="icn">🍴</span>昼食</a>
   <a href="#pack"><span class="icn">🎒</span>持ち物</a>
   <a href="#emergency"><span class="icn">📞</span>緊急</a>
 </nav>

@@ -1,0 +1,248 @@
+/* ============================================
+   旅のしおり 共通スタイル
+   モバイル縦長 + 印刷対応 + Tap-to-call/Map
+   ============================================ */
+
+:root {
+  --color-bg: #fbf7f0;
+  --color-paper: #ffffff;
+  --color-text: #2a2a2a;
+  --color-muted: #707070;
+  --color-line: #e5dcc8;
+  --color-accent: #d96b3b;     /* サファリのオレンジ */
+  --color-accent-dark: #b8542a;
+  --color-leaf: #5b8a4c;       /* グリーン */
+  --color-leaf-light: #eaf3e2;
+  --color-warning: #c8742c;
+  --color-warning-bg: #fff4e5;
+  --color-rain: #4a7ab0;
+  --color-rain-bg: #eaf2fa;
+  --shadow-card: 0 2px 6px rgba(0,0,0,0.06);
+  --radius: 10px;
+  --tap: 44px;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html { font-size: 16px; scroll-behavior: smooth; scroll-padding-top: 60px; }
+
+body {
+  margin: 0;
+  padding: 0 0 96px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+/* ====== Header ====== */
+.hero {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  color: #fff;
+  padding: 24px 16px 28px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.6rem; line-height: 1.25; }
+.hero .meta { font-size: 0.95rem; opacity: 0.95; }
+.hero .meta span + span::before { content: " ・ "; opacity: 0.7; }
+.hero .meta a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ====== Sticky nav ====== */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-line);
+  display: flex; overflow-x: auto; scrollbar-width: none;
+  padding: 6px 8px;
+}
+.sticky-nav::-webkit-scrollbar { display: none; }
+.sticky-nav a {
+  flex: 0 0 auto;
+  min-height: var(--tap);
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0 14px; margin: 0 2px;
+  color: var(--color-text); text-decoration: none;
+  font-size: 0.9rem; font-weight: 600;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.sticky-nav a:hover, .sticky-nav a:focus { background: var(--color-leaf-light); }
+
+/* ====== Section ====== */
+section { padding: 24px 0 8px; scroll-margin-top: 60px; }
+section h2 {
+  font-size: 1.25rem;
+  margin: 0 0 12px;
+  display: flex; align-items: center; gap: 10px;
+  border-left: 4px solid var(--color-accent);
+  padding: 4px 0 4px 12px;
+}
+section h2 .emoji { font-size: 1.4rem; }
+section h3 { font-size: 1.05rem; margin: 18px 0 8px; }
+p { margin: 0 0 12px; }
+
+/* ====== Cards ====== */
+.card {
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin: 0 0 14px;
+  box-shadow: var(--shadow-card);
+}
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  display: flex; align-items: baseline; gap: 8px;
+}
+.card h3 .time { color: var(--color-accent); font-weight: 700; font-size: 0.95rem; min-width: 56px; }
+.card .place-name { font-weight: 700; }
+.card .summary { color: var(--color-muted); font-size: 0.9rem; margin: 0 0 10px; }
+.card dl { margin: 8px 0; }
+.card dl div { display: flex; gap: 8px; padding: 4px 0; border-top: 1px dashed var(--color-line); }
+.card dl div:first-child { border-top: none; }
+.card dt { color: var(--color-muted); flex: 0 0 88px; font-size: 0.88rem; padding-top: 1px; }
+.card dd { margin: 0; flex: 1; font-size: 0.95rem; word-break: break-word; }
+
+/* Action buttons inside cards */
+.actions {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px; margin: 12px 0 4px;
+}
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-height: var(--tap);
+  padding: 0 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.92rem; font-weight: 600;
+  border: 1px solid var(--color-line);
+  background: #fff;
+  color: var(--color-text);
+}
+.btn.map { background: var(--color-leaf); color: #fff; border-color: var(--color-leaf); }
+.btn.tel { background: #fff; color: var(--color-accent-dark); border-color: var(--color-accent); }
+.btn.web { background: #fff; }
+.btn:active { transform: translateY(1px); }
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: var(--color-leaf-light);
+  color: var(--color-leaf);
+  font-weight: 600;
+  margin-right: 4px;
+}
+.tag.warn { background: var(--color-warning-bg); color: var(--color-warning); }
+.tag.rain { background: var(--color-rain-bg); color: var(--color-rain); }
+
+/* Lunch menu list */
+.menu {
+  margin: 6px 0 0; padding: 8px 12px;
+  background: #fafaf3; border-radius: 6px;
+  font-size: 0.9rem;
+}
+.menu li { padding: 2px 0; }
+
+/* Plan boxes */
+.plan-box {
+  border-left: 4px solid var(--color-leaf);
+  background: var(--color-leaf-light);
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin: 0 0 12px;
+}
+.plan-box.rain { border-color: var(--color-rain); background: var(--color-rain-bg); }
+.plan-box h4 { margin: 0 0 6px; font-size: 1rem; }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; margin: 0; }
+.checklist li {
+  padding: 8px 0 8px 28px;
+  border-bottom: 1px dashed var(--color-line);
+  position: relative;
+  font-size: 0.95rem;
+}
+.checklist li::before {
+  content: "☐";
+  position: absolute; left: 4px; top: 8px;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+.checklist li.critical::before { color: var(--color-accent); content: "★"; }
+
+/* Emergency call list */
+.emergency {
+  background: #fff;
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+.emergency .tel-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px 0; border-top: 1px dashed var(--color-line);
+}
+.emergency .tel-row:first-child { border-top: none; }
+.emergency .tel-row a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+
+/* ====== Bottom fixed nav (mobile primary actions) ====== */
+.bottom-nav {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--color-line);
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  z-index: 100;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.bottom-nav a {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 8px 4px 6px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.68rem;
+  min-height: 56px;
+}
+.bottom-nav .icn { font-size: 1.3rem; line-height: 1; margin-bottom: 2px; }
+.bottom-nav a:active { background: var(--color-leaf-light); }
+
+/* ====== Footer ====== */
+footer {
+  text-align: center; padding: 24px 16px;
+  font-size: 0.8rem; color: var(--color-muted);
+}
+
+/* Top page (index) */
+.trip-list { display: grid; gap: 14px; }
+.trip-list .card { display: block; text-decoration: none; color: inherit; }
+.trip-list .card:hover { border-color: var(--color-accent); }
+.trip-list .when { color: var(--color-accent); font-weight: 700; font-size: 0.92rem; }
+.trip-list .title { font-size: 1.15rem; font-weight: 700; margin: 4px 0; }
+.trip-list .place { color: var(--color-muted); font-size: 0.92rem; }
+
+/* ====== Print ====== */
+@media print {
+  body { background: #fff; padding: 0; font-size: 11pt; }
+  .sticky-nav, .bottom-nav, .actions { display: none !important; }
+  .hero { background: none !important; color: #000 !important; border: none; padding: 0 0 12pt; }
+  .card { box-shadow: none; border: 1px solid #999; page-break-inside: avoid; }
+  section { padding-top: 8pt; }
+  a { color: #000 !important; text-decoration: none; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+  a[href^="tel:"]::after { content: ""; }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .hero h1 { font-size: 1.4rem; }
+  .card dt { flex: 0 0 76px; font-size: 0.82rem; }
+  .bottom-nav a { font-size: 0.62rem; }
+}

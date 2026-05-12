@@ -378,6 +378,19 @@ footer {
 .compare-card .cons { background: #fff4ed; color: #844321; }
 .compare-card .pros::before { content: "○ "; font-weight: 700; }
 .compare-card .cons::before { content: "△ "; font-weight: 700; }
+.compare-card .photos {
+  margin: 0 -14px 10px;
+  padding: 0 14px;
+}
+.compare-card .photos figure {
+  flex: 0 0 78%;
+}
+.compare-card .photos img {
+  height: 150px;
+}
+.compare-card .photos figcaption {
+  font-size: 0.72rem;
+}
 .compare-card .compact-actions {
   margin-top: auto;
   display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
